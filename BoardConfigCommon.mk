@@ -193,9 +193,7 @@ BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 # Soong
 SOONG_CONFIG_NAMESPACES += XIAOMI_MSMNILE
 SOONG_CONFIG_XIAOMI_MSMNILE := \
-    PARTITION_SCHEME \
-    livedisplay_support_anti_flicker \
-    livedisplay_support_sunlight_enhancement
+    PARTITION_SCHEME
 
 SOONG_CONFIG_XIAOMI_MSMNILE_PARTITION_SCHEME ?= dynamic
 SOONG_CONFIG_XIAOMI_MSMNILE_livedisplay_support_anti_flicker ?= false
@@ -226,7 +224,7 @@ endif
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml \
+    vendor/infinity/config/device_framework_matrix.xml \
     $(COMMON_PATH)/configs/hidl/dolby.xml
 
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/hidl/manifest.xml
